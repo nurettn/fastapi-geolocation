@@ -1,0 +1,32 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi-geolocation"
+version = "1.0.1"
+description = "FastAPI Geolocation"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Nurettin Abacı", email = "abacinurettin@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+keywords = ["fastapi", "geolocation"]
+dependencies = [
+    "fastapi>=0.92.0",
+]
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/nurettn/fastapi-geolocation"
+Repository = "https://github.com/nurettn/fastapi-geolocation"
